@@ -395,20 +395,97 @@
         </div>
     </footer>
 
-    <div data-modal class="modal-div is-hidden">
-      <div class="modal-container">
-        <div class="modal-div-div">
-          <label class="modal-label" for="user-name">Name</label>
-          <div class="modal-div-input">
-            <input class="modal-input" id="user-name" name="user-name" type="text">
-          </div>
-        </div>
-        <button type="button" class="modal-button" data-modal-close>
-          <svg width="8" height="8" class="modal-svg">
-            <use href="./images/icons.svg#icon-linkedin-1"></use>
+    <div class="data-modal is-hidden" data-modal>
+      <div class="data-modal-box">
+        <button class="data-modal-button" type="button" data-modal-close>
+          <svg class="data-modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1-2"></use>
           </svg>
         </button>
-        <p class="modal-p"></p>
+        <p class="data-modal-p">
+          Leave your contacts and we will call you back
+        </p>
+        <form>
+          <div class="data-modal-box-one">
+            <label for="user-name" class="data-modal-box-labels">Name</label>
+            <div class="data-modal-box-two">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-form-input"
+                required
+              />
+              <svg class="data-modal-icons" width="18" height="24">
+                <use href="./images/icons.svg#icon-namebox"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="data-modal-box-one">
+            <label for="phone-number" class="data-modal-box-labels"
+              >Phone</label
+            >
+            <div class="data-modal-box-two">
+              <input
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                class="modal-form-input"
+                required
+              />
+              <svg class="data-modal-icons" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="data-modal-box-one">
+            <label for="email" class="data-modal-box-labels">Email </label>
+            <div class="data-modal-box-two">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="modal-form-input"
+                required
+              />
+              <svg class="data-modal-icons" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="data-modal-comment">
+            <label for="user-comment" class="data-modal-box-labels"
+              >Comment
+            </label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="data-modal-textarea"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="data-modal-box-privacy">
+            <input
+              class="privacy-input visually-hidden"
+              id="user-privacy"
+              name="user-privacy"
+              type="checkbox"
+              value="true"
+              required
+            />
+            <label for="user-privacy" class="user-privacy-label">
+              <span class="privacy-user-box">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </span>
+
+              I accept the terms and conditions of the
+              <a href="" class="privacy-link-link">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="send-button" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
