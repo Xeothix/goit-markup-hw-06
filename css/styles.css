@@ -6,17 +6,18 @@
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-beer(0.4, 0, 0.2, 1);
     transform: translateY(0%);
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;zi
 }
 
 :root {
+    --primary-brand-color: #4d5ae5;
     --main-blue: #2196f3;
     --purple: #4d5ae5;
     --navy-blue: #2e2f42;
@@ -694,4 +695,71 @@ img {
 
 .portfolio-list-two-element a {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+}
+
+.subscribe-div {
+    position: relative;
+    margin-right: 0;
+    margin-left: 80px;
+}
+
+.subscribe-p {
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+.subscribe-form {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--white-background-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    gap: 24px;
+}
+
+.subscribe-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+
+}
+
+.subscribe-button {
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    min-width: 165px;
+    height: 40px;
+    border-radius: 4px;
+    background: var(--primary-brand-color);
+    cursor: pointer;
+    border: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 284px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.64px;
+    color: #ffffff;
 }
