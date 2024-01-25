@@ -13,7 +13,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;zi
+    padding: 0;
 }
 
 :root {
@@ -24,8 +24,7 @@
     --grey-paragraphs: #434455;
     --off-white: #f4f4fd;
     --white: #fff;
-    --transition: color 250ms cubic-bezier(0.4, 0
-    , 0.2, 1);
+    --transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     --transition-variable: cubic-bezier(0.4, 0, 0.2, 1);
     --transform: translateY(0%);
 }
